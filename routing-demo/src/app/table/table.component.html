@@ -1,0 +1,19 @@
+<h1>My Custom Table</h1>
+<hr>
+
+<table id="users">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <td>{{row.ID}}</td>
+    <td>{{row.Name}}</td>
+    <td>{{row.Age}}</td>
+    <td>{{row.Gender}}</td>
+    <td>{{row.Country}}</td>
+  </tr>
+
+</table>
