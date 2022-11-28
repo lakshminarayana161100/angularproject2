@@ -1,0 +1,48 @@
+<!-- <div class="container">
+    <h2>PAN Card Information</h2>
+    <div>
+        <input type="text" placeholder="product name">
+        <input type="text" placeholder="description ">
+        <input type="text" placeholder="category ">
+        <input type="text" placeholder="price">
+    </div>
+    <div class="box">
+        <p>Upload PAN Card (Only JPEG file allowed)</p>
+        <input type="file" placeholder="Choose File" formControlName="image">
+    </div>
+    <div class="d-grid">
+        <button type="submit" class="primary">Upload</button>
+    </div>
+</div> -->
+<form #userPost="ngForm" action="" [formGroup]="testForms" (ngSubmit)="postaddress(userPost.value)">
+<div class="container">
+    <h1>product details</h1>
+    <div>
+        <br>
+        <label for="text">name:</label>
+        <input type="text" class="form-control " id="text" placeholder="name" name="text" formControlName="name">
+    </div>
+    <br>
+    <div>
+        <label for="text">description:</label>
+        <input type="text" class="form-control " id="text" placeholder="description" name="text"
+            formControlName="description">
+    </div><br>
+    <div>
+        <label for="text">category:</label>
+        <input type="text" class="form-control " id="text" placeholder="category" name="text"
+            formControlName="category">
+    </div><br>
+    <div>
+        <label for="text">price:</label>
+        <input type="text" class="form-control " id="text" placeholder="price" name="text" formControlName="price">
+    </div><br>
+    <div>
+        <label for="exampleFormControlFile1">product image:</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" formControlName="image">
+    </div><br>
+    <div >
+        <button type="button" class="btn btn-primary" (click)="postaddress(userPost.value)">add product</button>
+    </div>
+</div>
+</form>

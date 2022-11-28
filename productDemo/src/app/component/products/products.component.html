@@ -1,0 +1,41 @@
+ <div  class="container  mob-tables">
+
+
+   <div class="headers">
+    <h2 class="table-title">Manage products</h2>
+    <button class="btn add">Add product</button>
+   </div>
+
+   <table class="table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>category</th> 
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        <tr *ngFor=" let mobile of products">
+             <td><img src="" width="50" height="50">
+            </td>
+             <td>{{mobile['name']}}</td>
+             <td>{{mobile.description}}</td>
+             <td>{{mobile.price}}</td>
+             <td>{{mobile.category}}</td>
+             <td>
+                <button class="btn btn-primary ">Edit</button>
+             </td>
+             <td>
+                <button class="btn btn-danger ">Delete</button>
+             </td>
+        </tr>
+
+    </tbody>
+   </table>
+
+
+</div>

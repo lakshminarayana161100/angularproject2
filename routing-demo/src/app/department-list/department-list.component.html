@@ -1,1 +1,9 @@
-<p>department-list works!</p>
+<h1>
+   Engineering Department List
+  </h1>
+  <ul class="items">
+    <li *ngFor="let department of departments" [class.selected]="isSelected(department)" (click)="onSelect(department)">
+      <!--*ngFor is a directive ,it is used to repeat a pportion of HTML template once per each-->
+       <span class="badge">{{department.id}}</span> {{department.name}} <!-- inside double braces:{{expression}}  -->
+    </li>
+</ul>

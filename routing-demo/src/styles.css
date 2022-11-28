@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-nav a {
+ nav a {
     padding: 5px 10px;
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
-    background-color: #eee;
+    background-color: gold;
     border-radius: 4px;
+    color: white;
+    font-size:30px ;
   }
   nav a:visited, a:link {
     color: #607D8B;
@@ -17,3 +19,6 @@ nav a {
   nav a.active {
     color: #039be5;
   }
+html, body { height: 100%;
+background-color: #039be5; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } 

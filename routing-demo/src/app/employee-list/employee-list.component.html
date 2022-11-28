@@ -1,1 +1,9 @@
-<p>employee-list works!</p>
+<h1>
+    Employee-list
+</h1>
+<ul class="items">
+    <li *ngFor="let employee of employee">
+        <!--*ngFor is a directive ,it is used to repeat a pportion of HTML template once per each-->
+        <span class="badge">{{employee.id}}</span> {{employee.name}}
+    </li>
+</ul>

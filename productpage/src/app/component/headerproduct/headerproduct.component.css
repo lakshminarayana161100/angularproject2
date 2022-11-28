@@ -1,0 +1,146 @@
+/* h1 {
+    margin-top: 5px;
+}
+
+.box {
+    height: 81px;
+    width: 557px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 22px;
+}
+
+.h3 {
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.box1 {
+    height: 220px;
+    width: 557px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 22px;
+    padding-top: 20px;
+    
+
+}
+.boxs{
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid gainsboro;
+    width: 558px;
+    margin-left: 24px;
+    border-radius: 5px;
+}
+
+.detail {
+    margin: 10px;
+    margin-top: -16px;
+    
+}
+
+.box2 {
+    height: 150px;
+    width: 557px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px;
+    padding-top: 2px;
+}
+
+button {
+    margin-top: 26px;
+    margin-left: 40px;
+}
+
+.cen {
+    margin: 30px;
+    margin-left: 50px;
+}
+
+.primary {
+    color: white;
+    background-color: #3f9ce2;
+    border: 2px solid #3f9ce2;
+    border-radius: 5px;
+    width: 100px;
+    height: 45px;
+    margin-left: 250px;
+}
+.primary:hover{
+    background: blue;
+   }
+   textarea{
+    margin-top: -4px;
+    margin-left: 10px;
+   }
+   .btn {
+    margin-top: 3px;
+    margin-left: 338px;
+   } */
+
+   .mob-tables{
+    width: 800px;
+    padding: 20px 25px;
+    background-color: white;
+    margin: 21px 300px;
+    border-radius: 3px;
+    
+}
+
+.headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+    background-color: rgb(96, 188, 246);
+    color: white;
+}
+.add{
+    background-color: white;
+    color: blue;
+}
+th{
+    text-align: center;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 190px;
+    left: 350px;
+    
+    z-index: 100;
+}
+.mobileForm{
+    background-color: white;
+    width: 600px;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+.form-control{
+    width:60%;
+}
+.group{
+    display: flex;
+    margin: 15px 10px;
+}
+
+.group label{
+    width: 100px;
+    line-height: 40px;
+    height: 40px;
+}
+.action{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 20px;
+}

@@ -1,0 +1,98 @@
+<!-- <div class="container">
+    <h2>Manage products</h2>
+    <div class="cen">
+        <div class="box">
+            <button style="color:#3f9ce2; border: none; outline: none;" routerLink="/addproduct">+ADD PRODUCT</button>
+        </div>
+         <div class="boxs">
+            <div class="box1"  *ngFor="let text of products">
+                <div class="detail">
+                   
+                    <button type="button" class="btn btn-danger" (click)="deleteproduct(text._id)">delete</button>
+                    <h5>Image:<img src="assets/images{{text.image}}" width="50" height="50"></h5>
+                    <h5>Name:{{text.name}}</h5>
+                    <h5>Description:{{text.description}}</h5>
+                    <h5>Price:{{text.price}}</h5>
+                    <h5>Category:{{text.category}}</h5>
+              
+                </div>
+            </div>
+        </div> 
+          
+    </div> -->
+    
+<div class="container  mob-tables">
+
+
+    <div class="headers">
+        <h2 class="table-title">Manage products</h2>
+        <button class="btn add" (click)="openForm(text)" >Add product</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>category</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            <tr *ngFor="let text of products">
+                <td><img src="{{text.image}}" width="50" height="50">
+                </td>
+                <td>{{text.name}}</td>
+                <td>{{text.description}}</td>
+                <td>{{text.price}}</td>
+                <td>{{text.category}}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="openForm(text)">Edit</button>
+                </td>
+                <td >
+                    <button class="btn btn-danger " (click)="deleteproduct(text._id)" >Delete</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<div class="form-wrapper" *ngIf="showForm">
+
+    <div class="mobileForm">
+        <h2 class="text-centre text-info">{{formHeader}}</h2>
+        <div class="group">
+            <label for="">Image:</label>
+            <input type="text" class="form-control" [(ngModel)]="image" name="image">
+        </div>
+        <div class="group">
+            <label for="">Name:</label>
+            <input type="text" class="form-control" [(ngModel)]="name" name="name">
+        </div><br>
+        <div class="group">
+            <label for="">Description:</label>
+            <input type="text" class="form-control" [(ngModel)]="description" name="description">
+        </div><br>
+        <div class="group">
+            <label for="">Price:</label>
+            <input type="text" class="form-control" [(ngModel)]="price" name="price">
+        </div><br>
+        <div class="group">
+            <label for="">Category:</label>
+            <input type="text" class="form-control" [(ngModel)]="category" name="category">
+        </div><br>
+        <div class="action">
+            <button class="btn btn-primary  save" (click)="saveMobile()">{{product}}</button>
+            <button class="btn btn-danger  cancel" (click)="closeForm()">cancel</button>
+        </div>
+
+    </div>
+</div>
